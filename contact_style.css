@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    color: black;
+    background: linear-gradient( white, #97cf8a);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #315e26;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #97cf8a;
+}
+
+nav {
+    background: #97cf8a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: #315e26;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    display: flex;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:960px) {
+    /* navbar will adjust based on the screensize and the hamburger will appear */
+    nav {
+        width: 100%;
+    }
+
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin: 2rem ;
+    }
+
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .navbar_menu.active {
+        background-color: #97cf8a;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.5rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .ham-menu-bar {
+        height: 4px;
+        width: 25px;
+        background-color: #315e26;
+        margin: 3px auto;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .ham-menu {
+        position: absolute;
+        top: 8px;
+        right: 5%;
+        transform: translate(5%, 20%);
+        align-items: center;
+    }
+
+    .navbar_item {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .ham-menu .ham-menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .ham-menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .ham-menu-bar:nth-child(1) {
+        transform: translateY(4px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .ham-menu-bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    section.is-active {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
+
+    /* add img that will gradually descrease size when screensize is changing */
+    /* img {
+        width: 600px;
+    } */
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+#contact-reach-div {
+    position:absolute;
+    height: 51px;
+    left: 365px;
+    top: 198px;
+    width: 62px;
+    background-color:black;
+    color:white;
+}
+
+.contact-reach-div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.contact-info span {
+    color: #315e26;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+    background: transparent;
+}
+
+.contact-content {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    position: relative;
+    margin: 7% auto; /* Center the modal vertically */
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 50%; /* Set width of modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: linear-gradient( white, #97cf8a);
+}
+
+.close-btn {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-info-div {
+    display: grid;
+    place-items: center;
+}
+
+.contact-content h2 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.contact-content p {
+    font-size: 1.4rem;
+}
+
+.contact-social {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contact-social-div h1 {
+    font-size: 2.5rem;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #315e26;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    margin: 3rem 2rem 3rem 2rem;
+    transition: 0.3s ease;
+    color: #315e26;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+    background-color: #315e26;
+    box-shadow: 0 0 15px #315e26;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #97cf8a;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: #315e26;
+    font-weight: 600;
+    border: 2px solid #315e26;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #315e26;
+    color: white;
+    box-shadow: 0 0 15px #315e26;
+}
+
+.contact-info {
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.contact-info {
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.contact-info span {
+    position: static;
+}
+
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .contact-content h2 {
+        font-size: 13px;
+    }
+
+    .contact-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-content img {
+        width: 60vw;
+        margin-top: 4rem;
+    }
+
+    .social-icons a {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .contact-social-div h1 {
+        font-size: 1.7rem;
+    }
+
+    .modal-content {
+        position: relative;
+        margin: 15% auto; /* Center the modal vertically */
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 80%; /* Set width of modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: linear-gradient( white, #97cf8a);
+    }
+
+    .contact-reach-div {
+        text-align: center;
+    }
+
+    .contact-info-div {
+        display: grid;
+        place-items: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .modal-content {
+        position: relative;
+        margin: 50% auto; /* Center the modal vertically */
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 80%; /* Set width of modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: linear-gradient( white, #97cf8a);
+    }
+}
