@@ -32,7 +32,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #315e26;
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -67,7 +67,7 @@ nav {
     color: #315e26;
     font-weight: 800;
     cursor: pointer;
-    transition: .3s ease;
+    transition: 0.1s ease;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -89,7 +89,7 @@ nav a {
     color: black;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     border-bottom: 3px solid transparent;
     display: flex;
 }
@@ -139,7 +139,7 @@ nav a:hover {
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         height: 50vh;
         z-index: -1;
     }
@@ -148,7 +148,7 @@ nav a:hover {
         background-color: #97cf8a;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.5rem;
@@ -162,7 +162,7 @@ nav a:hover {
         background-color: #315e26;
         margin: 3px auto;
         border-radius: 10px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
 
     .ham-menu {
@@ -219,6 +219,17 @@ section {
     gap: 10rem;
 }
 
+.contact-content {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
 #contact-reach-div {
     position:absolute;
     height: 51px;
@@ -249,17 +260,6 @@ section {
     background: transparent;
 }
 
-.contact-content {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
-}
-
 .modal-content {
     position: relative;
     margin: 7% auto; /* Center the modal vertically */
@@ -270,7 +270,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: linear-gradient( white, #97cf8a);
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
 
 .close-btn {
@@ -324,7 +324,7 @@ section {
     font-size: 1.7rem;
     border-radius: 50%;
     margin: 3rem 2rem 3rem 2rem;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     color: #315e26;
 }
 
@@ -344,12 +344,12 @@ section {
     color: #315e26;
     font-weight: 600;
     border: 2px solid #315e26;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     cursor: pointer;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #315e26;
     color: white;
     box-shadow: 0 0 15px #315e26;
