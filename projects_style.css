@@ -264,7 +264,6 @@ section {
     width: 35%; /* Occupies 35% of the width */
     padding: 10px;
     display: flex;
-    justify-content: flex-end; /* Aligns the image to the right */
 }
 
 #webpage-img {
@@ -290,7 +289,8 @@ section {
 
 .skills-list {
     display: inline-flex;
-    align-items: center;
+    /* align-items: center; */
+    padding: 20px;
     font-size: 10px;
 }
 
@@ -321,19 +321,44 @@ section {
         margin: 5rem 4rem;
     }
 
-    .home .project-content h3 {
-        font-size: 2.5rem;
-        transition: 0.1s ease;
+    .project-list {
+        margin: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .proj-img-div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .proj-list {
+        width: 100%;
     }
 
     .project-content h1 {
-        font-size: 4rem;
+        font-size: 1.5rem;
         transition: 0.1s ease;
     }
 
-    .home-img img {
-        width: 200px;
-        margin-top: 4rem;
+    .project-content p {
+        font-size: 10px;
         transition: 0.1s ease;
     }
+
+    .skills-list {
+        padding: 0;
+        align-items: center;
+    }
+
+    .skills-list h3 {
+        font-size: 10px;
+        transition: 0.1s ease;
+    }
+
+    .skills-list h2 {
+        font-size: 100px;
+        transition: 0.1s ease;
+    }
+
 }
