@@ -469,4 +469,60 @@ section {
         margin-top: 4rem;
         transition: 0.1s ease;
     }
+
+    .contact-content h2 {
+        font-size: 13px;
+    }
+
+    .contact-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-content img {
+        width: 60vw;
+        margin-top: 4rem;
+    }
+
+    .social-icons a {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .contact-social-div h1 {
+        font-size: 1.7rem;
+    }
+
+    .modal-content {
+        position: relative;
+        margin: 15% auto; /* Center the modal vertically */
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 80%; /* Set width of modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: linear-gradient( white, #97cf8a);
+    }
+
+    .contact-reach-div {
+        text-align: center;
+    }
+
+    .contact-info-div {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal-content {
+        position: relative;
+        margin: 50% auto; /* Center the modal vertically */
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: 80%; /* Set width of modal */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: linear-gradient( white, #97cf8a);
+    }
 }
