@@ -232,8 +232,8 @@ section {
     justify-content: space-between; /* Space between image and text */
     align-items: center; /* Align items in the center vertically */
     flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
-    padding: 10px;
-    padding-top: 20px;
+    padding: 30px;
+    padding-bottom: 10px;
     border: 1px solid black;
     box-shadow: 0 0 10px #315e26;
     border-radius: 10px;
@@ -257,12 +257,12 @@ section {
 
 .proj-list {
     width: 60%; /* Occupies 60% of the width */
-    padding: 10px;
+    /* padding: 10px; */
 }
   
 .proj-img-div {
     width: 35%; /* Occupies 35% of the width */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
 }
 
