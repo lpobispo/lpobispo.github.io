@@ -37,7 +37,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #315e26;
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -72,7 +72,7 @@ nav {
     color: #315e26;
     font-weight: 800;
     cursor: pointer;
-    transition: .3s ease;
+    transition: 0.1s ease;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -94,7 +94,7 @@ nav a {
     color: black;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     border-bottom: 3px solid transparent;
     display: flex;
 }
@@ -151,7 +151,7 @@ nav a.active {
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         height: 50vh;
         z-index: -1;
     }
@@ -160,7 +160,7 @@ nav a.active {
         background-color: #97cf8a;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.5rem;
@@ -174,7 +174,7 @@ nav a.active {
         background-color: #315e26;
         margin: 3px auto;
         border-radius: 10px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
 
     .ham-menu {
@@ -263,7 +263,7 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 19px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .skill-list h3 {
@@ -306,7 +306,7 @@ section {
     background-color: #315e26;
     margin: 5px auto;
     border-radius: 25px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .rate-list span.rate-off {
@@ -315,7 +315,7 @@ section {
     background-color: #c4eeb2;
     margin: 5px auto;
     border-radius: 25px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .rate-list {
@@ -353,7 +353,7 @@ section {
         width: 20px;
         background-color: #315e26;
         margin: 5px auto;
-        transition: 0.9s ease;
+        transition: 0.1s ease;
     }
     
     .rate-list span.rate-off {

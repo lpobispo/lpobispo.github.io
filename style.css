@@ -32,7 +32,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #315e26;
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -67,14 +67,14 @@ nav {
     color: #315e26;
     font-weight: 800;
     cursor: pointer;
-    transition: .3s ease;
+    transition: 0.1s ease;
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
 .logo:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .navbar_menu {
@@ -89,7 +89,7 @@ nav a {
     color: black;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     border-bottom: 3px solid transparent;
     display: flex;
 }
@@ -146,7 +146,7 @@ nav a.active {
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         height: 50vh;
         z-index: -1;
     }
@@ -155,7 +155,7 @@ nav a.active {
         background-color: #97cf8a;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.1s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.5rem;
@@ -169,7 +169,7 @@ nav a.active {
         background-color: #315e26;
         margin: 3px auto;
         border-radius: 10px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
 
     .ham-menu {
@@ -255,7 +255,7 @@ section {
     border-radius: 20px;
     box-shadow: 0 0 25px solid #315e26;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     box-shadow: 10px 10px 30px black;
 
 }
@@ -263,10 +263,6 @@ section {
 .home-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
-}
-
-.toOpenModal {
-    padding-top: 20px;
 }
 
 .typing-text {
@@ -280,6 +276,163 @@ section {
     font-size: 30px;
     overflow: hidden;
     animation: blink-caret 0.75s infinite;
+}
+
+.toOpenModal {
+    padding-top: 20px;
+}
+
+/* Contact me style */
+.contact-content {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+#contact-reach-div {
+    position:absolute;
+    height: 51px;
+    left: 365px;
+    top: 198px;
+    width: 62px;
+    background-color:black;
+    color:white;
+}
+
+.contact-reach-div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.contact-info span {
+    color: #315e26;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+    background: transparent;
+}
+
+.modal-content {
+    position: relative;
+    margin: 7% auto; /* Center the modal vertically */
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 50%; /* Set width of modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: linear-gradient( white, #97cf8a);
+    transition: 0.1s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-info-div {
+    display: grid;
+    place-items: center;
+}
+
+.contact-content h2 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.contact-content p {
+    font-size: 1.4rem;
+}
+
+.contact-social {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contact-social-div h1 {
+    font-size: 2.5rem;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #315e26;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    margin: 3rem 2rem 3rem 2rem;
+    transition: 0.1s ease;
+    color: #315e26;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+    background-color: #315e26;
+    box-shadow: 0 0 15px #315e26;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #97cf8a;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: #315e26;
+    font-weight: 600;
+    border: 2px solid #315e26;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #315e26;
+    color: white;
+    box-shadow: 0 0 15px #315e26;
+}
+
+.contact-info {
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.contact-info {
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.contact-info span {
+    position: static;
 }
 
 @keyframes blink-caret {
@@ -312,6 +465,6 @@ section {
     .home-img img {
         width: 200px;
         margin-top: 4rem;
-        transition: 0.2s ease;
+        transition: 0.1s ease;
     }
 }
