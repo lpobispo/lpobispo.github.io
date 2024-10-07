@@ -31,11 +31,12 @@
     <!-- content  of the home page -->
     <section class="home">
         <div class="project-content">
-            <div class="project-list" id="proj-webpage">
+            <!-- Portfolio project -->
+            <div class="project-list">
                 <div class="proj-img-div">
-                    <img src="resources/proj_webpage.png" alt="My Webpage" id="webpage-img">
+                    <img src="resources/proj_webpage.png" alt="My Webpage">
                 </div>
-                <div class="proj-list" id="webpage">
+                <div class="proj-list">
                     <h1>Professional Portfolio & <br> Resume Webpage</h1>
                     <p>
                         Leveraging the power of AI together with some tutorial over the internet, I created a simple responsive webpage site designed to showcase my professional experiences, skills, and projects. It features sections for my work history, skills, and completed projects, all presented in a clean and organized layout. The goal of the site is to provide an accessible, visually appealing way for potential employers and collaborators to learn about my qualifications and expertise. 
@@ -56,8 +57,132 @@
                     </div>
                 </div>
             </div>
+            <!-- End of webpage proj -->
+
+            <!-- Python slot machine -->
+            <div class="project-list">
+                <div class="proj-img-div">
+                    <img src="resources/proj_slotmachine.png" alt="Slot Machine">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Slot Machine</h1>
+                    <p>
+                        This mini project simulates a simple slot machine game in Python, using essential programming concepts. It begins by asking the user to deposit a starting balance, which is then used to place bets on each spin. The slot machine randomly selects three symbols from a list, and the results are displayed in a visually separated row format. Using if statements, the program checks for matching symbols to determine if the player has won and calculates the payout accordingly. The while loop keeps the game running until the user either runs out of funds or decides to stop. Additionally, the program utilizes functions to organize and simplify the code, such as functions for spinning the reels, displaying the results, and calculating payouts. Input and output functions enhance the user experience, making it an engaging, interactive game.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of slot machine proj -->
+
+            <!-- Python hangman game -->
+            <div class="project-list">
+                <div class="proj-img-div" id="hangman-div">
+                    <img src="resources/proj_hangman1.png" alt="Hangman image 1">
+                    <img src="resources/proj_hangman2.png" alt="Hangman image 2">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Hangman Game</h1>
+                    <p>
+                        This Hangman game in Python challenges players to guess letters in a hidden word within a limited number of wrong attempts. The player chooses a category (either fruits or animals), and the program selects a word from a list associated with that category. The game displays the current state of the word as underscores, and as the player guesses letters correctly, the letters replace the underscores in their correct positions. With each incorrect guess, a visual representation of the hangman figure is displayed, progressing until the player has either guessed the word or reached the maximum number of incorrect attempts. The program utilizes functions to organize the game logic, while loops for gameplay continuation, if statements to validate guesses and track progress, and basic input/output to create an engaging and interactive experience.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End of python hangman proj -->
+
+            <!-- Rock paper scissors -->
+            <div class="project-list">
+                <div class="proj-img-div" id="hangman-div">
+                    <img src="resources/proj_RPS.png" alt="Hangman image 1">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Rock-Paper-Scissors game</h1>
+                    <p>
+                        This Python Rock Paper Scissors game allows a player to compete against the computer in a classic game of chance. The player selects between "rock," "paper," or "scissors," and the computer randomly makes its choice. Using if statements, the program compares the player's choice with the computer's to determine the winner based on the standard game rules: rock beats scissors, scissors beat paper, and paper beats rock. After each round, the player can choose to play again or exit the game. The game loop, controlled by a while loop, ensures continuous play until the player decides to quit. Basic input/output functions make the game interactive, while randomization adds an element of unpredictability. This mini-project provides a fun way to practice fundamental programming concepts in Python.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of rock paper scissor game -->
+
+            <!-- Python banking -->
+            <div class="project-list">
+                <div class="proj-img-div" id="banking-div">
+                    <img src="resources/proj_bank_showbalance.png" alt="XYZ Bank">
+                    <img src="resources/proj_bank_deposit.png" alt="XYZ Bank">
+                    <img src="resources/proj_bank_withdraw.png" alt="XYZ Bank">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Simple Banking System</h1>
+                    <p>
+                        This Python-based banking application allows users to manage basic banking transactions. The program features options to show the current balance, deposit funds, and withdraw funds, all while providing clear feedback messages for each action. Users are prompted to make selections from a main menu, with each choice invoking corresponding functions that handle specific tasks. Input validation ensures deposits and withdrawals are sensible, while conditional statements manage each transaction type and handle invalid inputs. The while loop enables the program to run continuously, allowing multiple transactions until the user decides to exit. This project demonstrates the application of essential programming concepts, such as functions, loops, and conditional logic, in a practical setting.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of banking proj -->
+
+            <!-- Shopping cart program -->
+            <div class="project-list">
+                <div class="proj-img-div">
+                    <img src="resources/proj_shoppingcart.png">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Shopping Cart Program</h1>
+                    <p>
+                        This shopping cart program allows users to select items from a predefined menu, calculates the total cost of items ordered, and provides a summary of the order. The program features a dictionary to store menu items and their prices, and uses user input to receive orders until the user chooses to quit. Each valid item is added to a list that functions as the cart, while the total amount is computed based on the items in the list. The program provides feedback if an item isn’t available on the menu, and it concludes by displaying the ordered items and total amount due. This project showcases key programming elements like dictionaries, lists, loops, and conditionals in a practical application.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of shopping cart proj -->
+
+            <!-- Python number guessing game -->
+            <div class="project-list">
+                <div class="proj-img-div">
+                    <img src="resources/proj_numberguess.png">
+                </div>
+                <div class="proj-list">
+                    <h1>Python Number Guessing game</h1>
+                    <p>
+                        In this number guessing game, players try to guess a randomly generated number within a specified range. The program sets the range from 1 to 100 and allows players to keep guessing until they find the correct number. It provides feedback after each guess, indicating whether the guess was too low, too high, or out of range. The game keeps track of the number of guesses made and displays this total when the player correctly guesses the number. By using conditional statements, loops, and user input validation, this project demonstrates key programming concepts and logic. The game concludes with a short delay to give the player time to see their results.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Language: &nbsp</h3>
+                        <div class="role-skills" id="sample">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of number guessing proj -->
         </div>
     </section>
     <script src="app.js"></script>
 </body>
-</html
+</html>
