@@ -18,7 +18,12 @@ body {
     width: 100%;
     overflow-x: hidden;
     color: black;
-    background: linear-gradient( white, #97cf8a);
+    background: linear-gradient(to bottom,
+                                white 0%,
+                                #b1dd9e 25%,
+                                white 50%,
+                                #b1dd9e 75%,
+                                white 100%);
 }
 
 ::-webkit-scrollbar {
@@ -214,7 +219,6 @@ nav a.active {
 /* Content style */
 
 section {
-    min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
 
@@ -233,11 +237,12 @@ section {
     align-items: center; /* Align items in the center vertically */
     flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
     padding: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border: 1px solid black;
     box-shadow: 0 0 10px #315e26;
     border-radius: 10px;
     transition: all 0.1s ease;
+    margin-bottom: 20px;
 }
 
 .project-list:hover {
@@ -266,13 +271,22 @@ section {
     display: flex;
 }
 
-#webpage-img {
+#hangman-div {
+    display: block;
+}
+
+#banking-div {
+    display: block;
+}
+
+.proj-img-div img {
     max-width: 100%; /* Ensure the image fits the container */
     height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px;
 }
 
 .project-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 1;
     padding-bottom: 20px;
@@ -283,14 +297,14 @@ section {
 }
 
 .project-content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-bottom: 20px;
 }
 
 .skills-list {
     display: inline-flex;
     /* align-items: center; */
-    padding: 20px;
+    padding-bottom: 20px;
     font-size: 10px;
 }
 
@@ -325,11 +339,13 @@ section {
         margin: auto;
         flex-direction: column;
         padding: 20px;
+        margin-bottom: 20px;
     }
 
     .proj-img-div {
         width: 80%;
         margin: auto;
+        padding-bottom: 20px;
     }
 
     .proj-list {
