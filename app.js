@@ -1,3 +1,5 @@
+
+// JS code for the hamburger toggle menu effect
 const ham_menu = document.querySelector('#mobile-menu')
 const navbar_menu_links = document.querySelector('.navbar_menu')
 const section_opacity = document.querySelector('section')
@@ -8,6 +10,9 @@ ham_menu.addEventListener('click', function() {
     section_opacity.classList.toggle('is-active');
 })
 
+
+
+// JS code for typewriter effects
 const words = ['an aspiring Software Developer', 'an aspiring Data Engineer', 'a Dad :)'];
 let wordIndex = 0;
 let charIndex = 0;
